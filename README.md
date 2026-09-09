@@ -2,7 +2,7 @@
 
 > 山东大学 · 三维点云语义分割 / 弱监督学习 / 3D 高斯泼溅与三维重建
 >
-> 📍 济南 | 📧 you@example.com | 💻 [GitHub](https://github.com/yourname) | 🎓 [ORCID](https://orcid.org/0009-0004-3777-8729)
+> 📍 青岛 | 📧 1710582287@qq.com | 💻 [GitHub](https://github.com/sun1233217T) | 🎓 [ORCID](https://orcid.org/0009-0004-3777-8729)
 
 ---
 
@@ -114,4 +114,4 @@
 
 ---
 
-*本简历使用 Markdown 编写，网页版见 [yourname.github.io/resume](https://yourname.github.io/resume)*
+*本简历使用 Markdown 编写，[网页版见] (https://github.com/sun1233217T/Resume)*
