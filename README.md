@@ -12,14 +12,15 @@
 
 ## 🎓 教育经历
 
-**山东大学 · 计算机科学与技术学院（硕士 / 博士，待确认）** — 2022.09 – 至今
+**山东大学 · 计算机科学与技术学院（博士）** — 2022.09 – 至今
 
-- 导师：XXX（待填）
+- 导师：辛士庆
 - 研究方向：点云语义分割、弱监督学习、3D 高斯泼溅与三维重建
 
 **山东大学 · 泰山学堂（化学取向，本科）** — 2018.09 – 2022.06
 
 - 教育部「基础学科拔尖学生培养试验计划」基地
+- 导师：徐政虎
 
 ## 📄 学术论文
 
@@ -42,9 +43,9 @@
    **Haochen Sun**, Shiyang Wei, Shuai Cao, Peng Jiang
    2025 · DOI: [10.1007/978-981-96-9805-9_26](https://doi.org/10.1007/978-981-96-9805-9_26)
 
-5. **ECGS: Extinction Coordination for Enhanced Gaussian Splatting**（第一作者 · 在投 / Under Review）
+5. **ECGS: Extinction Coordination for Enhanced Gaussian Splatting**（第一作者 · 已接受）
    **Haochen Sun**, Rui Xu, Zhiyang Dou, Tianyang Xue, Changhe Tu, Taku Komura, Lin Lu, Shiqing Xin
-   投稿目标期刊 / 会议：待补充
+   *IEEE Transactions on Visualization and Computer Graphics (TVCG)*
 
 ## 💡 发明专利
 
@@ -62,7 +63,7 @@
 
 ## 🚀 项目 / 科研经历
 
-> 以下描述为根据成果推断的占位版本，请按实际情况修改。
+<!-- > 以下描述为根据成果推断的占位版本，请按实际情况修改。 -->
 
 ### ECGS：面向 3D 高斯泼溅的消光协调优化
 *对应在投论文（第一作者）*
@@ -100,7 +101,7 @@
 
 | 类别 | 内容 |
 | --- | --- |
-| 语言 | Python、C++（待确认） |
+| 语言 | Python、C/C++ |
 | 深度学习 | PyTorch、点云网络（PointNet++ / Point Transformer 等） |
 | 三维视觉 | 3D Gaussian Splatting、三维重建、Open3D、点云处理、双目立体视觉、相机标定 |
 | 图像 | OpenCV、语义分割、弱监督学习 |
