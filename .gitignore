@@ -1,3 +1,8 @@
 .DS_Store
 Thumbs.db
 *.log
+*.pdf
+*.synctex(busy)
+*.aux
+*.out
+*.synctex.gz

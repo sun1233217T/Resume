@@ -16,7 +16,8 @@
       </div>
       <ul class="contact">
         <li>📍 青岛</li>
-        <li>📧 <a href="1710582287@qq.com">1710582287@qq.com</a></li>
+        <li>📞 15634103257</li>
+        <li>📧 <a href="mailto:1710582287@qq.com">1710582287@qq.com</a></li>
         <li>💻 <a href="https://github.com/sun1233217T" target="_blank">github</a></li>
         <li>🎓 <a href="https://orcid.org/0009-0004-3777-8729" target="_blank">ORCID: 0009-0004-3777-8729</a></li>
       </ul>
@@ -26,7 +27,7 @@
     <!-- ===== 个人简介 ===== -->
     <section>
       <h2>个人简介</h2>
-      <p>山东大学计算机科学与技术学院研究生，本科毕业于山东大学泰山学堂。研究方向为三维点云语义分割、弱监督学习与 3D 高斯泼溅（3D Gaussian Splatting）。在 TVCG、TPAMI、TMM 等国际期刊发表学术论文 5 篇，其中以第一作者 / 学生一作发表 3 篇（含 TVCG 已录用 1 篇），另有 2 篇共同一作论文在投（TVCG、NeurIPS）；获授权 / 受理国家发明专利 2 项、软件著作权 1 项。</p>
+      <p>山东大学计算机科学与技术学院博士研究生（预计 2027 年 6 月毕业），本科毕业于山东大学泰山学堂（化学取向，教育部拔尖计划基地），兼具科学计算与三维视觉交叉背景。研究方向为三维点云语义分割、弱监督学习与 3D 高斯泼溅（3D Gaussian Splatting）。在 TVCG、TPAMI、TMM 等国际期刊发表学术论文 5 篇，其中以第一作者 / 学生一作发表 3 篇（含 TVCG 已录用 1 篇），另有 2 篇共同一作论文在投（TVCG、NeurIPS）；获授权 / 受理国家发明专利 2 项、软件著作权 1 项。</p>
     </section>
 
     <!-- ===== 教育经历 ===== -->
@@ -36,9 +37,9 @@
         <div class="item-head">
           <div>
             <strong>山东大学 · 计算机科学与技术学院</strong>
-            <span class="role">博士</span>
+            <span class="role">博士（预计 2027 年 6 月毕业）</span>
           </div>
-          <span class="date">2022.09 – 至今</span>
+          <span class="date">2022.09 – 2027.06</span>
         </div>
         <ul>
           <li>导师：辛士庆</li>
@@ -71,6 +72,7 @@
           <span class="authors"><b>Haochen Sun</b>, Rui Xu, Zhiyang Dou, Tianyang Xue, Changhe Tu, Taku Komura, Lin Lu, Shiqing Xin</span><br />
           <span class="venue">IEEE Transactions on Visualization and Computer Graphics (TVCG)</span>
           <span class="tag">中科院一区 Top</span>
+          <a class="doi" href="https://github.com/sun1233217T/ECGS.git" target="_blank">Code: github.com/sun1233217T/ECGS</a>
         </li>
         <li>
           <strong>DEM-GS: Towards Relightable 3D Gaussian Splatting with Distilled Environment &amp; Material</strong>
@@ -157,10 +159,11 @@
           </div>
         </div>
         <ul>
-          <li>提出消光协调器（Extinction Coordinator），约束高斯基元的本征不透明度与其跨视角最大 alpha 混合权重一致，使基元沿薄壳状表面分布，显著提升表示能力（ECGS）</li>
-          <li>设计各向异性形态正则化，促进平面状高斯、抑制针状伪影；在多个基准上高斯数量最多减少 75%，同时提升几何精度与渲染速度</li>
-          <li>提出 DEM-GS：将 3DGS 与神经光照场结合实现材质–光照显式解耦，以空间变化的紧凑神经表示替代环境贴图、鲁棒建模近场光照，并通过材质蒸馏实现任意光照下的高效高保真重光照</li>
-          <li class="tech">技术栈：Python / PyTorch / 3D Gaussian Splatting / NeRF</li>
+          <li>提出消光协调器（Extinction Coordinator），约束高斯基元的本征不透明度与其跨视角最大 alpha 混合权重一致，解决 3DGS 参数化非唯一 / 异质的问题，使基元沿薄壳状表面分布，显著提升表示能力（ECGS）</li>
+          <li>设计各向异性形态正则化，促进平面状高斯、抑制针状伪影；在多个基准上高斯数量最多减少 75%，同时提升几何精度与渲染速度；轻量模块化设计，可无缝集成进现有 Gaussian Splatting 管线，代码已开源</li>
+          <li>提出 DEM-GS：针对球谐（SH）外观将高光、漫反射与自发光混合、导致模型难以编辑与重光照的问题，将光照的神经表示与基于高斯的材质属性分离学习；通过纹理聚类从多视图图像中提取真实物体材质、表面纹理与环境光照，基于 Phong 模型实现任意光照下物理合理的高保真重光照</li>
+          <li>基于 CUDA 可微光栅化管线实现上述方法：在 3DGS 光栅化与 alpha 混合链路中扩展自定义可微算子与正则项梯度，支撑消光协调约束与材质–光照解耦的端到端训练</li>
+          <li class="tech">技术栈：Python / PyTorch / CUDA 可微光栅化管线 / 3D Gaussian Splatting / NeRF</li>
         </ul>
       </div>
 
@@ -199,8 +202,8 @@
     <section>
       <h2>技能</h2>
       <div class="skills">
-        <span>Python</span><span>C/C++</span><span>PyTorch</span><span>3D Gaussian Splatting</span><span>NeRF</span><span>三维重建</span><span>可重光照渲染</span><span>逆向渲染</span><span>Open3D</span><span>OpenCV</span>
-        <span>深度学习</span><span>计算机视觉</span><span>图像处理</span><span>双目立体视觉</span><span>弱监督学习</span>
+        <span>Python</span><span>C/C++</span><span>CUDA</span><span>PyTorch</span><span>3D Gaussian Splatting</span><span>NeRF</span><span>三维重建</span><span>可重光照渲染</span><span>逆向渲染</span><span>可微光栅化</span><span>Open3D</span><span>OpenCV</span>
+        <span>深度学习</span><span>计算机视觉</span><span>图像/点云神经网络（SAM / DINO / PointNet++ 等）</span><span>图像分割与理解</span><span>图像处理</span><span>双目立体视觉</span><span>弱监督学习</span>
         <span>自动微分</span><span>Linux</span><span>Git</span><span>LaTeX</span>
       </div>
     </section>
@@ -210,6 +213,8 @@
       <h2>荣誉与奖项</h2>
       <ul class="plain">
         <li><strong>GDC 2025 面向建筑场景的高精度三维重建挑战赛</strong> · 三等奖</li>
+        <li><strong>2025 华为软件精英挑战赛</strong> · 校内赛二等奖（山东大学）</li>
+        <li><strong>2025 华为软件精英挑战赛</strong> · 江山赛区二等奖</li>
         <li><strong>2024 华为软件精英挑战赛</strong> · 江山赛区二等奖</li>
         <li><strong>ChinaGraph 2024「先临精鹰杯」高精度三维重建大赛</strong> · 三等奖</li>
         <li><strong>山东大学</strong> · 2023 年度优秀研究生</li>

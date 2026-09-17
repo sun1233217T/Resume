@@ -1,0 +1,157 @@
+% !TEX program = xelatex
+% 孙浩辰 · 个人简历（LaTeX 版，与网页版 / README 同口径）
+% 编译方式：XeLaTeX（本地 TeX Live / MiKTeX，或直接上传 Overleaf）
+% 中文支持：ctex + fandol 字体集（TeX Live / Overleaf 自带，无需系统字体）
+\documentclass[10pt, a4paper]{ctexart}
+
+\usepackage[margin=1.6cm, top=1.4cm, bottom=1.4cm]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontawesome5} % 若本地无此宏包，注释掉本行并改用纯文本图标
+
+\definecolor{accent}{RGB}{0, 60, 130}
+\definecolor{lightgray}{RGB}{110, 110, 110}
+
+\hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent}
+
+% 页面无页码
+\pagestyle{empty}
+
+% 紧凑节标题
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0em}{}[{\color{accent}\titlerule[0.6pt]}]
+\titlespacing{\section}{0pt}{6pt}{4pt}
+
+% 紧凑列表
+\setlist[itemize]{leftmargin=1.2em, itemsep=1pt, topsep=2pt, parsep=0pt}
+
+% 论文/条目列表
+\newlist{pubs}{enumerate}{1}
+\setlist[pubs]{label={[\arabic*]}, leftmargin=2.2em, itemsep=3pt, topsep=2pt}
+
+% 标签（加粗彩色小字）
+\newcommand{\taghl}[1]{\textcolor{accent}{\textbf{#1}}}
+\newcommand{\taggray}[1]{\textcolor{lightgray}{#1}}
+
+\begin{document}
+
+% ===== 头部 =====
+\begin{center}
+  {\LARGE\bfseries 孙浩辰}\quad{\large Haochen Sun}\\[2pt]
+  {\small\color{lightgray} 山东大学 \textbar{} 三维点云语义分割 / 弱监督学习 / 3D 高斯泼溅与三维重建}\\[3pt]
+  {\small
+    青岛 \textbar{}
+    15634103257 \textbar{}
+    \href{mailto:1710582287@qq.com}{1710582287@qq.com} \textbar{}
+    \href{https://github.com/sun1233217T}{github.com} \textbar{}
+    \href{https://orcid.org/0009-0004-3777-8729}{ORCID}
+  }
+\end{center}
+
+\vspace{-4pt}
+
+% ===== 个人简介 =====
+\section{个人简介}
+山东大学计算机科学与技术学院博士研究生（预计 2027 年 6 月毕业），本科毕业于山东大学泰山学堂（化学取向，教育部拔尖计划基地），兼具科学计算与三维视觉交叉背景。研究方向为三维点云语义分割、弱监督学习与 3D 高斯泼溅（3D Gaussian Splatting）。在 TVCG、TPAMI、TMM 等国际期刊发表学术论文 5 篇，其中以第一作者 / 学生一作发表 3 篇（含 TVCG 已录用 1 篇），另有 2 篇共同一作论文在投（TVCG、NeurIPS）；获授权 / 受理国家发明专利 2 项、软件著作权 1 项。
+
+% ===== 教育经历 =====
+\section{教育经历}
+\noindent\textbf{山东大学 · 计算机科学与技术学院}（博士，预计 2027 年 6 月毕业）\hfill 2022.09 -- 2027.06
+\begin{itemize}
+  \item 导师：辛士庆；研究方向：点云语义分割、弱监督学习、3D 高斯泼溅与三维重建
+\end{itemize}
+\noindent\textbf{山东大学 · 泰山学堂}（本科 · 化学专业）\hfill 2018.09 -- 2022.06
+\begin{itemize}
+  \item 教育部「基础学科拔尖学生培养试验计划」基地；导师：徐政虎
+\end{itemize}
+
+% ===== 学术论文 =====
+\section{学术论文}
+\begin{pubs}
+  \item \textbf{ECGS: Extinction Coordination for Enhanced Gaussian Splatting} \taghl{第一作者} \taghl{已录用 · 出版中}\\
+  \textbf{Haochen Sun}, Rui Xu, Zhiyang Dou, Tianyang Xue, Changhe Tu, Taku Komura, Lin Lu, Shiqing Xin\\
+  \textit{IEEE Transactions on Visualization and Computer Graphics (TVCG)} · 中科院一区 Top ·
+  \href{https://github.com/sun1233217T/ECGS.git}{代码开源}
+
+  \item \textbf{DEM-GS: Towards Relightable 3D Gaussian Splatting with Distilled Environment \& Material} \taghl{共同一作} \taggray{在投}\\
+  Zichang Wang$^{\dagger}$, \textbf{Haochen Sun}$^{\dagger}$, Qiong Zeng, Shiqing Xin, Shuangming Chen, Changhe Tu, Wenping Wang（$^{\dagger}$ 共同第一作者）\\
+  \textit{IEEE Transactions on Visualization and Computer Graphics (TVCG)}
+
+  \item \textbf{3D Fresnel Volumizing for Efficient Implicit Velocity Field Reconstruction} \taghl{共同一作} \taggray{在投}\\
+  Sihan Chen$^{\dagger}$, \textbf{Haochen Sun}$^{\dagger}$, Peng Jiang, Anthony G. Cohn（$^{\dagger}$ 共同第一作者）\\
+  \textit{Conference on Neural Information Processing Systems (NeurIPS)}
+
+  \item \textbf{Improving Back-Projection Accuracy for the Semantic Segmentation of Indoor Point Clouds With Fewer \& Sparse Image Annotations} \taghl{学生一作}\\
+  Peng Jiang, \textbf{Haochen Sun}, Zhiyi Pan, Jinming Cao, Roger Zimmermann, Changhe Tu\\
+  \textit{IEEE Transactions on Multimedia (TMM)}, 2025 · 中科院一区 Top ·
+  \href{https://doi.org/10.1109/TMM.2025.3599085}{DOI: 10.1109/TMM.2025.3599085}
+
+  \item \textbf{CC4S: Encouraging Certainty and Consistency in Scribble-Supervised Semantic Segmentation}\\
+  Zhiyi Pan, \textbf{Haochen Sun}, Peng Jiang, Ge Li, Changhe Tu, Haibin Ling\\
+  \textit{IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)}, 2024.12 · 中科院一区 Top ·
+  \href{https://doi.org/10.1109/TPAMI.2024.3415387}{DOI: 10.1109/TPAMI.2024.3415387}
+
+  \item \textbf{Leverage Automatic Differentiation Routines for Seismic Traveltime Tomography in Tunnels} \taghl{第一作者 · 专著章节}\\
+  \textbf{Haochen Sun}, Shiyang Wei, Shuai Cao, Peng Jiang\\
+  Springer, 2025 · \href{https://doi.org/10.1007/978-981-96-9805-9_26}{DOI: 10.1007/978-981-96-9805-9\_26}
+
+  \item \textbf{Calculating Rock Joint Frequency in TBM Excavation Through Binocular Vision and Segmentation Techniques}\\
+  Jingwei Xu, \textbf{Haochen Sun}, Hongmei Wang, Yaxu Wang, Yan Zhu, Peng Jiang, Yi Shan\\
+  \textit{Advances in Civil Engineering}, 2025.01 ·
+  \href{https://doi.org/10.1155/adce/4515005}{DOI: 10.1155/adce/4515005}
+\end{pubs}
+
+% ===== 专利与软著 =====
+\section{发明专利与软件著作权}
+\begin{itemize}
+  \item \textbf{一种三维点云语义分割的方法及系统}（发明专利 · 已授权）蒋鹏、\textbf{孙浩辰}、曾琼、屠长河 · 公告号 CN117058384B · 2024.02.09
+  \item \textbf{一种隧道地震波走时层析成像方法及系统}（发明专利 · 实质审查中）蒋鹏、\textbf{孙浩辰}、齐圣杰、王琨、杨森林 · 公开号 CN119758448A
+  \item \textbf{基于二维投影的三维点云场景标注软件}（软件著作权）登记号 2025SR1884614 · 2025
+\end{itemize}
+
+% ===== 项目经历 =====
+\section{项目 / 科研经历}
+
+\noindent\textbf{面向 3D 高斯泼溅 / 神经辐射场的几何重建与表征优化}\hfill \taggray{TVCG 已录用（一作）· TVCG 在投（共同一作）}
+\begin{itemize}
+  \item 提出消光协调器（Extinction Coordinator），约束高斯基元的本征不透明度与其跨视角最大 alpha 混合权重一致，解决 3DGS 参数化非唯一 / 异质的问题，使基元沿薄壳状表面分布，显著提升表示能力（ECGS）
+  \item 设计各向异性形态正则化，促进平面状高斯、抑制针状伪影；在多个基准上高斯数量最多减少 75\%，同时提升几何精度与渲染速度；轻量模块化设计，可无缝集成进现有 Gaussian Splatting 管线，代码已开源
+  \item 提出 DEM-GS：针对球谐（SH）外观将高光、漫反射与自发光混合、导致模型难以编辑与重光照的问题，将光照的神经表示与基于高斯的材质属性分离学习；通过纹理聚类从多视图图像中提取真实物体材质、表面纹理与环境光照，基于 Phong 模型实现任意光照下物理合理的高保真重光照
+  \item 基于 CUDA 可微光栅化管线实现上述方法：在 3DGS 光栅化与 alpha 混合链路中扩展自定义可微算子与正则项梯度，支撑消光协调约束与材质–光照解耦的端到端训练
+\end{itemize}
+
+\noindent\textbf{涂鸦监督的三维 / 二维语义分割框架与点云标注工具}\hfill \taggray{TPAMI 2024 · TMM 2025 · 专利 · 软著}
+\begin{itemize}
+  \item 提出同时约束「确定性」与「一致性」的涂鸦监督分割框架 CC4S，仅用稀疏涂鸦标注即可达到接近全监督的分割精度
+  \item 针对室内点云提出反投影精度优化方法，将少量二维图像标注高精度传播到三维点云；据此实现点云标注软件，大幅提升标注效率
+\end{itemize}
+
+\noindent\textbf{AI for Science：智能计算方法在隧道工程中的应用}\hfill \taggray{专著章节（一作）· NeurIPS 在投（共同一作）}
+\begin{itemize}
+  \item 提出 3D Fresnel Volumizing 框架：坐标神经网络隐式参数化速度场 + 可微菲涅尔体化将 1D 射线扩展为 3D 体区域；计算时间较 FWI 最多降低 10 倍，SSIM 最高 0.96、PSNR 最高 26 dB
+  \item 将自动微分引入隧道地震波走时层析成像：反演误差（MAE）较传统方法降低 50\%--83\%，单次反演由 16--23 小时缩短至 2--3 分钟
+  \item 结合双目立体视觉与图像分割实现 TBM 岩体节理频率自动化测量：30 组实测数据识别准确率 79\%（IoU 0.65），渗水、遮挡等复杂工况下保持鲁棒
+\end{itemize}
+
+% ===== 技能 =====
+\section{技能}
+\begin{itemize}
+  \item \textbf{语言与框架}：Python、C/C++、CUDA、PyTorch、图像/点云神经网络（SAM、DINO、PointNet++ 等）
+  \item \textbf{三维视觉与渲染}：3D Gaussian Splatting、NeRF、三维重建、可重光照渲染、逆向渲染、CUDA 可微光栅化管线、Open3D、双目立体视觉、相机标定
+  \item \textbf{图像与科学计算}：OpenCV、语义分割与图像理解、弱监督学习、自动微分、隐式神经表示、地震层析成像
+  \item \textbf{工具}：Git、Linux、\LaTeX
+\end{itemize}
+
+% ===== 荣誉 =====
+\section{荣誉与奖项}
+\begin{itemize}
+  \item GDC 2025 面向建筑场景的高精度三维重建挑战赛 · 三等奖
+  \item 2025 华为软件精英挑战赛 · 校内赛二等奖（山东大学）
+  \item 2025 华为软件精英挑战赛 · 江山赛区二等奖
+  \item 2024 华为软件精英挑战赛 · 江山赛区二等奖
+  \item ChinaGraph 2024「先临精鹰杯」高精度三维重建大赛 · 三等奖
+  \item 山东大学 · 2023 年度优秀研究生
+\end{itemize}
+
+\end{document}
