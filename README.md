@@ -24,10 +24,10 @@
 
 ## 📄 学术论文
 
-1. **ECGS: Extinction Coordination for Enhanced Gaussian Splatting**（第一作者 · 已录用 · 出版中）
+1. **ECGS: Extinction Coordination for Enhanced Gaussian Splatting**（第一作者）
    **Haochen Sun**, Rui Xu, Zhiyang Dou, Tianyang Xue, Changhe Tu, Taku Komura, Lin Lu, Shiqing Xin
    *IEEE Transactions on Visualization and Computer Graphics (TVCG)* · 中科院一区 Top
-   代码开源：[github.com/sun1233217T/ECGS](https://github.com/sun1233217T/ECGS.git)
+   DOI：[10.1109/TVCG.2026.3728436](https://doi.org/10.1109/TVCG.2026.3728436) · 代码开源：[github.com/sun1233217T/ECGS](https://github.com/sun1233217T/ECGS.git)
 
 2. **DEM-GS: Towards Relightable 3D Gaussian Splatting with Distilled Environment & Material**（共同一作 · 在投）
    Zichang Wang†, **Haochen Sun**†, Qiong Zeng, Shiqing Xin, Shuangming Chen, Changhe Tu, Wenping Wang（† 共同第一作者）
