@@ -8,7 +8,7 @@
 
 ## 👤 个人简介
 
-山东大学计算机科学与技术学院博士研究生（预计 2027 年 6 月毕业），本科毕业于山东大学泰山学堂（化学取向，教育部拔尖计划基地），兼具科学计算与三维视觉交叉背景。研究方向为三维点云语义分割、弱监督学习与 3D 高斯泼溅（3D Gaussian Splatting）。在 TVCG、TPAMI、TMM 等国际期刊发表学术论文 5 篇，其中以第一作者 / 学生一作发表 3 篇（含 TVCG 已录用 1 篇），另有 2 篇共同一作论文在投（TVCG、NeurIPS）；获授权 / 受理国家发明专利 2 项、软件著作权 1 项。
+山东大学计算机科学与技术学院博士研究生（预计 2027 年 6 月毕业），本科毕业于山东大学泰山学堂（化学取向，教育部拔尖计划基地），兼具科学计算与三维视觉交叉背景。研究方向为三维点云语义分割、弱监督学习与 3D 高斯泼溅（3D Gaussian Splatting）。在 TVCG、TPAMI、TMM、NeurIPS 等国际期刊与会议发表学术论文 6 篇，其中以第一作者 / 学生一作发表 3 篇（含 TVCG 1 篇），以共同一作发表 NeurIPS 2026 论文 1 篇，另有 1 篇共同一作论文在投（TVCG）；获授权 / 受理国家发明专利 2 项、软件著作权 1 项。
 
 ## 🎓 教育经历
 
@@ -33,9 +33,9 @@
    Zichang Wang†, **Haochen Sun**†, Qiong Zeng, Shiqing Xin, Shuangming Chen, Changhe Tu, Wenping Wang（† 共同第一作者）
    *IEEE Transactions on Visualization and Computer Graphics (TVCG)*
 
-3. **3D Fresnel Volumizing for Efficient Implicit Velocity Field Reconstruction**（共同一作 · 在投）
+3. **3D Fresnel Volumizing for Efficient Implicit Velocity Field Reconstruction**（共同一作）
    Sihan Chen†, **Haochen Sun**†, Peng Jiang, Anthony G. Cohn（† 共同第一作者）
-   *Conference on Neural Information Processing Systems (NeurIPS)*
+   *Conference on Neural Information Processing Systems (NeurIPS), 2026* · CCF-A 类顶会
 
 4. **Improving Back-Projection Accuracy for the Semantic Segmentation of Indoor Point Clouds With Fewer & Sparse Image Annotations**（学生一作）
    Peng Jiang, **Haochen Sun**, Zhiyi Pan, Jinming Cao, Roger Zimmermann, Changhe Tu
@@ -73,7 +73,7 @@
 ## 🚀 项目 / 科研经历
 
 ### 面向 3D 高斯泼溅 / 神经辐射场的几何重建与表征优化
-*对应 TVCG 已录用（第一作者，代码开源）· TVCG 在投（共同一作）*
+*对应 TVCG 2026（第一作者，代码开源）· TVCG 在投（共同一作）*
 
 - 提出消光协调器（Extinction Coordinator），约束高斯基元的本征不透明度与其跨视角最大 alpha 混合权重一致，解决 3DGS 参数化非唯一 / 异质的问题，使基元沿薄壳状表面分布，显著提升表示能力（ECGS）
 - 设计各向异性形态正则化，促进平面状高斯、抑制针状伪影；在多个基准上高斯数量最多减少 75%，同时提升几何精度与渲染速度；轻量模块化设计，可无缝集成进现有 Gaussian Splatting 管线，代码已开源
@@ -89,7 +89,7 @@
 - 技术栈：Python / PyTorch / Open3D / 深度学习 / 计算机视觉
 
 ### AI for Science：智能计算方法在隧道工程中的应用
-*对应专著章节（一作）· Adv. Civ. Eng. 2025 · 专利 CN119758448A · NeurIPS 在投（共同一作）*
+*对应专著章节（一作）· Adv. Civ. Eng. 2025 · 专利 CN119758448A · NeurIPS 2026（共同一作）*
 
 - 提出 3D Fresnel Volumizing 框架：以坐标神经网络将速度场隐式参数化为连续函数，并提出可微菲涅尔体化方法将 1D 射线路径扩展为 3D 体区域，结合多级并行正演实现高效三维速度场重建；计算时间较 FWI 方法最多降低 10 倍，重建质量 SSIM 最高 0.96、PSNR 最高 26 dB
 - 将自动微分引入隧道地震波走时层析成像，避免手工推导梯度；反演误差（MAE）较传统方法降低 50%–83%，单次反演由 16–23 小时缩短至 2–3 分钟，实测数据仅需 96 组走时观测即可准确拟合界面位置
